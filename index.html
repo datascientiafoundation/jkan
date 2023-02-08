@@ -25,3 +25,18 @@ layout: default
   {% endif %}
 {% endfor %}
 </div>
+
+<h3>Services</h3>
+<div class="homepage-categories">
+  {% for service in site.data.services %}
+  {% if service.featured == true %}
+  {% capture logo_alt %}{{ service.name }}{% if service.logo_credit and service.logo_credit != empty %} logo by {{ service.logo_credit }}{% endif %}{% endcapture %}
+  <a href="{{service.url}}" class="thumbnail" title="{{ logo_alt }}">
+    {% if service.logo and service.logo != empty %}
+    <img src="{{ site.baseurl }}{{ service.logo }}" alt="{{ logo_alt }}" width="50" height="50">
+    {% endif %}
+    {{ service.name }}
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>

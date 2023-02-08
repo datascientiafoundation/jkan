@@ -42,6 +42,7 @@ resource_fields:
     values:
       - api
       - csv
+      - rdf
       - json
       - geojson
       - html

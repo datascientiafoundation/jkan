@@ -5,14 +5,14 @@ layout: default
 <div class="container">
 <div data-component="view-switcher">
   <div data-hook="view" data-view="display">
-    <div class="row">
+    <div class="row wrapper">
       {% if page.logo and page.logo != empty %}
-      <div class="col-sm-3" style = "float: left;">
+      <div class="secondary col-sm-3" style = "float: left;">
         <a href="{{ page.logo }}" class="thumbnail"><img class="img-thumbnail rounded mx-auto d-block" src="{{ page.logo }}" alt="{{ page.title }} logo"></a>
       </div>
-      <div class="col-sm-9" style = "float: right;" >
+      <div class="primary col-sm-9" style = "float: right;" >
       {% else %}
-      <div class="col-sm-12">
+      <div class="primary col-sm-12">
       {% endif %}
         <h1>
           {{ page.title }}

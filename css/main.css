@@ -38,12 +38,12 @@ h1, h2, h3 {
 }
 
 
-.btn-primary {
+.btn-primary, .btn-info {
   border-color: #02828b;
   background-color: #02828b;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-info:hover {
   border-color: #02828b;
   background-color: #02828b;
 }

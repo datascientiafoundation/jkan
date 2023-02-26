@@ -8,7 +8,7 @@ layout: default
       {{ site.description }}
   </p>
 <hr class="my-4">
- <p><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/datasets" role="button">Start browsing</a></p>
+ <p><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/datasets" role="button">Browse All</a></p>
 </div>
 
 <h3>Browse by Category</h3>
@@ -26,7 +26,7 @@ layout: default
 {% endfor %}
 </div>
 
-<h3>Services</h3>
+<h3 id="services">Services</h3>
 <div class="homepage-categories">
   {% for service in site.data.services %}
   {% if service.featured == true %}

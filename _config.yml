@@ -2,7 +2,7 @@ title: JKAN
 greeting: Welcome to JKAN
 description: A lightweight, backend-free open data portal, powered by Jekyll.
 baseurl: /jkan
-logo: /img/jkan.png
+logo: /img/data-scientia-white.png
 
 # Site theme
 jkan_theme: Default
@@ -16,10 +16,16 @@ schema: default
 
 # Nav bar
 navigation:
+  - title: About Us
+    url: http://datascientia.disi.unitn.it/
   - title: Datasets
     url: /datasets/
   - title: Organizations
     url: /organizations/
+  - title: Services
+    url: /#services
+  - title: FAQ
+    url: /faq/
 
 # Collections
 collections:

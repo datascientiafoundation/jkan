@@ -2,13 +2,19 @@
 layout: default
 ---
 
-<div class="jumbotron">
-  <h1 class="display-4">{{ site.greeting }}</h1>
-  <p class="lead">
+<div class="jumbotron wrapper">
+  <div class="col-md-8">
+    <h1 class="display-4">{{ site.greeting }}</h1>
+    <p class="lead">
       {{ site.description }}
-  </p>
-<hr class="my-4">
- <p><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/datasets" role="button">Start browsing</a></p>
+    </p>
+    <hr class="my-4">
+    <p><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/datasets" role="button">Browse All</a></p>
+  </div>
+  <div class="col-md-4 catalog-logo">
+    <img src="{{site.baseurl}}{{site.logo}}">
+  </div>
+  
 </div>
 
 <h3>Browse by Category</h3>
@@ -26,7 +32,7 @@ layout: default
 {% endfor %}
 </div>
 
-<h3>Services</h3>
+<h3 id="services">Services</h3>
 <div class="homepage-categories">
   {% for service in site.data.services %}
   {% if service.featured == true %}

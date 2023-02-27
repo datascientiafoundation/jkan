@@ -189,25 +189,16 @@ dataset h3 {
   padding-top: 20px;
 }
 
-.footer-left {
-  padding-left: 70px;
-}
 
-.footer-center {
-  padding: 35px 70px 25px 70px;
-}
 
-.footer-right {
-  padding: 25px 70px 25px 15px ;
-}
-
-.footer-left, .footer-center, .footer-right{
-  text-align: center;
+.footer-center-left, .footer-center-right, .footer-right {
+  padding-top: 35px;
+  padding-left: 90px;
 }
 
 
-.footer-left img {
-  max-width: 40%;
+.footer-left, img {
+  max-width: 80%;
 }
 
 .site-footer a {

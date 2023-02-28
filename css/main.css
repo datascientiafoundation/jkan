@@ -1,0 +1,319 @@
+
+/* Set the background of the page and remove the overflow*/
+body {
+  background: none #59abb3; /* website main background */
+  font-family: system-ui;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+footer {
+  margin-top: auto;
+}
+
+a {
+  color: #40505f;
+}
+
+a:hover {
+  color: #40505f;
+}
+
+.navbar {
+  background: white;
+}
+
+h1, h2, h3 {
+  color: #40505f;
+}
+
+.jumbotron {
+  display: flex;
+}
+
+.jumbotron .catalog-logo {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.inner-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.btn-primary, .btn-info {
+  color: #ffffff;
+  border-color: #02828b;
+  background-color: #02828b;
+}
+
+.btn-primary:hover, .btn-info:hover {
+  color: #ffffff;
+  border-color: #02828b;
+  background-color: #02828b;
+}
+
+.btn-primary:focus, .btn-info:focus{
+  color: #ffffff;
+  border-color: #02828b;
+  background-color: #02828b;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #ffffff;
+  border-color: #02828b;
+  background-color: #02828b;
+}
+
+/* Header css*/
+.account-masthead {
+  background-color: #40505f;
+}
+
+.login-link:hover {
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  float: right;
+  color: white;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+.logo {
+  max-width: 20%;
+  padding-top: .001rem;
+}
+
+.footer-logo {
+  max-width: 70%;
+  padding-top: .001rem;
+}
+
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
+  color: #02828b;
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-collapse {
+    display: block !important;
+  }
+}
+
+.navbar-nav {
+  float: right;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #02828b;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #02828b;
+}
+
+
+/* breadcrumb css*/
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb-item.active {
+  color: #40505f;
+}
+
+/*dataset page*/
+
+.wrapper{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  background-color: #fff;
+}
+
+.wrapper .media {
+  padding: 15px;
+}
+
+div[data-hook="datasets-items"] {
+  padding: 15px;
+  border-radius: 4px;
+  background: #f4f4f4db;
+  box-shadow: 0 0 0 2px rgb(0 0 0 / 2%);
+}
+
+
+dataset {
+  display: block;
+  padding-bottom: 20px;
+}
+
+dataset h3 {
+  border-bottom: solid 3px #02828b;;
+}
+
+.badge-primary {
+  background-color: #40505f;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #59abb3;
+  border-color: #59abb3;
+}
+
+.secondary {
+  padding-top: 15px;
+}
+
+.primary {
+  padding: 15px;
+}
+
+.primary h1 {
+  border-bottom: solid 3px #02828b;
+}
+
+.media-body h4 {
+  border-bottom: solid 3px #02828b;
+}
+
+/*admin page */
+.tab-pane {
+  padding-top: 15px;
+}
+
+/************************************************** Footer css***************************************************/
+.site-footer {
+  background: none #40505f; /*set the background color*/
+  color: white; /*set the text color*/
+}
+
+.site-footer .row {
+  padding-top: 20px;
+}
+
+
+
+.footer-center-left, .footer-center-right, .footer-right {
+  padding-top: 35px;
+  padding-left: 90px;
+}
+
+
+.footer-left, img {
+  max-width: 80%;
+}
+
+.site-footer a {
+  color: white; /* set the color of the link*/
+}
+
+
+.organization-thumbnail img {
+  width: 64px;
+}
+
+.list-group-item-truncate {
+  display: inline-block;
+  line-height: 1;
+  width: 75%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.resource-description {
+  font-size: 90%;
+}
+
+.select2 {
+  margin-bottom: 10px;
+}
+
+.datasets-count {
+  display: inline-block;
+}
+
+.add-dataset-btn {
+  margin-top: 15px;
+}
+
+/* Hidden from guests */
+.user-issue,
+.admin-only {
+  display: none;
+}
+
+.resource-details,
+.show-resource-details {
+  display: none;
+}
+
+.show-resource-details {
+  font-size: 80%;
+}
+
+.user-issue {
+  color: red;
+}
+
+[data-component~=view-switcher] [data-hook~=view] {
+  display: none;
+}
+
+.homepage-categories,
+.theme-gallery {
+  text-align: justify;
+}
+
+/* allows last line of categories to be justify aligned */
+.homepage-categories:after,
+.theme-gallery:after {
+  display: inline-block;
+  width: 100%;
+  content: '';
+}
+
+.homepage-categories .thumbnail {
+  display: inline-grid;
+  min-width: 120px;
+  text-align: center;
+  border: none;
+  padding: 10px;
+}
+
+.homepage-categories .thumbnail img {
+  height: 80px;
+  margin: auto;
+}
+
+.homepage-categories a {
+  color: #000;
+}
+
+.theme-gallery .card {
+  display: inline-block;
+  max-width: 250px;
+  text-align: center;
+}
+
+.theme-gallery .card img {
+  width: 100%;
+}
+
+.theme-gallery .card-primary {
+  border-width: 5px;
+}
+
+.view-code-link {
+  margin: 1em;
+}

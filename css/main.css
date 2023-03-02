@@ -1,7 +1,8 @@
 
 /* Set the background of the page and remove the overflow*/
 body {
-  background: none #59abb3; /* website main background */
+  /*background: none #59abb3;  website main background */
+  background: none #add3f4;
   font-family: system-ui;
   min-height: 100vh;
   display: flex;
@@ -47,26 +48,42 @@ h1, h2, h3 {
 
 .btn-primary, .btn-info {
   color: #ffffff;
+  /*
   border-color: #02828b;
   background-color: #02828b;
+  */
+  border-color: #007bffe0;
+  background-color: #007bffe0;
 }
 
 .btn-primary:hover, .btn-info:hover {
   color: #ffffff;
+  /*
   border-color: #02828b;
   background-color: #02828b;
+  */
+  border-color: #007bffe0;
+  background-color: #007bffe0;
 }
 
 .btn-primary:focus, .btn-info:focus{
   color: #ffffff;
+  /*
   border-color: #02828b;
   background-color: #02828b;
+  */
+  border-color: #007bffe0;
+  background-color: #007bffe0;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
   color: #ffffff;
+  /*
   border-color: #02828b;
   background-color: #02828b;
+  */
+  border-color: #007bffe0;
+  background-color: #007bffe0;
 }
 
 /* Header css*/
@@ -97,7 +114,8 @@ h1, h2, h3 {
 
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
-  color: #02828b;
+  /*color: #02828b;*/
+  color: #007bffe0;
 }
 
 @media (min-width: 576px) {
@@ -111,11 +129,13 @@ h1, h2, h3 {
 }
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  color: #02828b;
+  /*color: #02828b;*/
+  color: #007bffe0;
 }
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: #02828b;
+  /*color: #02828b;*/
+  color: #007bffe0;
 }
 
 
@@ -156,7 +176,8 @@ dataset {
 }
 
 dataset h3 {
-  border-bottom: solid 3px #02828b;;
+  /*border-bottom: solid 3px #02828b;*/
+  border-bottom: solid 3px #007bffe0;
 }
 
 .badge-primary {
@@ -166,8 +187,12 @@ dataset h3 {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
+  /*
   background-color: #59abb3;
   border-color: #59abb3;
+  */
+  background-color: #add3f4;
+  border-color: #add3f4;
 }
 
 .secondary {
@@ -179,11 +204,13 @@ dataset h3 {
 }
 
 .primary h1 {
-  border-bottom: solid 3px #02828b;
+  /*border-bottom: solid 3px #02828b;*/
+  border-bottom: solid 3px #007bffe0;
 }
 
 .media-body h4 {
-  border-bottom: solid 3px #02828b;
+  /*border-bottom: solid 3px #02828b;*/
+  border-bottom: solid 3px #007bffe0;
 }
 
 /*admin page */

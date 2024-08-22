@@ -1,0 +1,24 @@
+- name: Language
+  logo: /img/resources/language.png
+  logo_credit: Simone Bocca
+  featured: true
+- name: Knowledge
+  logo: /img/resources/knowledge.png
+  logo_credit: Simone Bocca
+  featured: true
+- name: Data Source
+  logo: /img/resources/dataset.png
+  logo_credit: Simone Bocca
+  featured: true
+- name: Graph
+  logo: /img/resources/kg.png
+  logo_credit: Simone Bocca
+  featured: true
+- name: Documentation
+  logo: /img/resources/doc.png
+  logo_credit: Simone Bocca
+  featured: true
+- name: Software
+  logo: /img/resources/sw.png
+  logo_credit: Simone Bocca
+  featured: true

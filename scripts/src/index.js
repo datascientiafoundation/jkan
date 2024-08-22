@@ -10,6 +10,7 @@ import Navigation from './components/navigation'
 import DatasetsList from './components/datasets-list'
 import CategoriesFilter from './components/categories-filter'
 import OrganizationsFilter from './components/organizations-filter'
+import typeFilter from './components/type-filter'
 import Form from './components/form'
 import DatasetForm from './components/dataset-form'
 import AdminForm from './components/admin-form'
@@ -60,7 +61,8 @@ const components = [
   {tag: 'theme-gallery', class: ThemeGallery},
   {tag: 'datasets-list', class: DatasetsList, usesDatasets: true},
   {tag: 'categories-filter', class: CategoriesFilter, usesDatasets: true},
-  {tag: 'organizations-filter', class: OrganizationsFilter, usesDatasets: true}
+  {tag: 'organizations-filter', class: OrganizationsFilter, usesDatasets: true},
+  {tag: 'type-filter', class: typeFilter, usesDatasets: true}
 ]
 for (let component of components) {
   const els = queryByComponent(component.tag)

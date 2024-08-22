@@ -32,17 +32,17 @@ layout: default
 {% endfor %}
 </div>
 
-<h3 id="services">Services</h3>
+<h3>Browse by Resource Type</h3>
 <div class="homepage-categories">
-  {% for service in site.data.services %}
-  {% if service.featured == true %}
-  {% capture logo_alt %}{{ service.name }}{% if service.logo_credit and service.logo_credit != empty %} logo by {{ service.logo_credit }}{% endif %}{% endcapture %}
-  <a href="{{service.url}}" class="thumbnail" title="{{ logo_alt }}">
-    {% if service.logo and service.logo != empty %}
-    <img src="{{ site.baseurl }}{{ service.logo }}" alt="{{ logo_alt }}" width="50" height="50">
-    {% endif %}
-    {{ service.name }}
-  </a>
+{% for type in site.data.resources %}
+  {% if type.featured == true %}
+    {% capture logo_alt %}{{ type.name }}{% if type.logo_credit and type.logo_credit != empty %} logo by {{ type.logo_credit }}{% endif %}{% endcapture %}
+    <a href="{{ site.baseurl }}/datasets/?type={{ type.name | slugify }}" class="thumbnail" title="{{ logo_alt }}">
+      {% if type.logo and type.logo != empty %}
+        <img src="{{ site.baseurl }}{{ type.logo }}" alt="{{ logo_alt }}">
+      {% endif %}
+      {{ type.name }}
+    </a>
   {% endif %}
-  {% endfor %}
+{% endfor %}
 </div>

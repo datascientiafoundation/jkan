@@ -1,7 +1,7 @@
 ---
 schema: default
 title: Sample dataset
-organization: Sample Department
+organization: DataScientia Foundation
 notes: This is an example dataset that comes with a new installation of JKAN
 resources:
   - name: Air Monitoring Stations CSV
@@ -19,7 +19,9 @@ resources:
 license: 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/'
 category:
   - Digital University
+type:
+  - Documentation
 maintainer: Tim Wisniewski
 maintainer_email: tim@timwis.com
-tags: gino
+tags: doc, report
 ---
